@@ -24,6 +24,7 @@ p {
 
 .aheader p {
     color: rgb(239, 17, 17);
+    font-style: italic;
 }
 
 * {
