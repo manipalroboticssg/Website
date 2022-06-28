@@ -75,6 +75,7 @@ button:hover {
 .signupbtn {
     float: left;
     width: 50%;
+    text-decoration: none;
 }
 
 .container {
