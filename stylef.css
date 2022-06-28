@@ -1,3 +1,17 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    background-image: url("./image/pexels-kindel-media-8566521.jpg");
+}
+h1 {
+    color: black;
+}
+p {
+    color: black;
+    text-align: justify;
+}
+
+
 .aheader {
     font-size: 10px;
     background-color: white;
