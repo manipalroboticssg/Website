@@ -10,132 +10,218 @@
 </head>
 
 <body>
-
     <div class="header">
-        <h1 id="top"><img src="./image/MRSG.jpeg" alt="MRSG" width="142" height="142"> &nbsp; Manipal Robotics Support
-            Group</h1>
+        <h1 id="top"><img src="./image/MRSG.jpeg" alt="MRSG" width="142" height="142">&nbsp;
+            Manipal Robotics Support Group</h1>
         <p>The Largest Community of Robotic Enthusiasts in Manipal</p>
     </div>
-
     <div class="navbar">
-        <a href="./index.html" class="right">Home</a>
-        <a href="./workshop.html" target="_blank" rel="noopener noreferrer" class="right">Workshop</a>
-        <a href="https://manipalroboticssg.wordpress.com/" target="_blank" class="right">Blog</a>
-        <a href="./about.html" class="right">About</a>
-        <a href="./login.html" target="_blank" rel="noopener noreferrer" class="left">Login</a>
-        <a href="./signup.html" target="_blank" rel="noopener noreferrer" class="left">Sign Up</a>
+        <div class="dropdown">
+            <button class="dropbtn">Workshop
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Blog
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">About
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./aboutus.html" target="_blank" rel="noopener noreferrer">Us</a>
+                <a href="./about.html" target="_blank" rel="noopener noreferrer">MRSG</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <div class="container">
+                <img src="./image/MRSG.jpeg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <div class="container">
+                <img src="./image/pexels-kindel-media-8566521.jpg" style="width:100%">
+                <div class="text">
+                    <p> Caption Two</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div class="container">
+                <img src="./image/instagram.png" style="width:100%;">
+                <div class="text">
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="./slideshoe.js"></script>
+    <h3>Upcoming Events</h3>
+    <div class="row">
+        <div class="column" onclick="openTab('b1');" style="background:purple;">
+            Box 1
+        </div>
+        <div class="column" onclick="openTab('b2');" style="background:purple;">
+            Box 2
+        </div>
+        <div class="column" onclick="openTab('b3');" style="background:purple;">
+            Box 3
+        </div>
+        <div class="column" onclick="openTab('b4');" style="background:purple;">
+            Box 4
+        </div>
     </div>
 
-    <marquee bgcolor=#1abc9c>
-        <b>Coming Soon!!!!</b>
-    </marquee>
-
-    <div class="row">
-        <div class="side">
-            Calendar
-        </div>
-        <div class="main">
-            Planning Our next Move.
-
-        </div>
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b1" class="containerTab" style="display:none;background:purple">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Box 1</h2>
+        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+            ullamcorper
+            nam. Ius error diceret deseruisse ad</p>
     </div>
 
+    <div id="b2" class="containerTab" style="display:none;background:purple">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Box 2</h2>
+        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+            ullamcorper
+            nam. Ius error diceret deseruisse ad</p>
+    </div>
 
-    <!--
-       Slideshow container 
-<div class="slideshow-container">
-
-  //Full-width slides/quotes //
-  <div class="mySlides">
-    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-    <p class="author">- John Keats</p>
-  </div>
-
-  <div class="mySlides">
-    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-    <p class="author">- Ernest Hemingway</p>
-  </div>
-
-  <div class="mySlides">
-    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-    <p class="author">- Thomas A. Edison</p>
-  </div>
-
-  // Next/prev buttons //
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
- //Dots/bullets/indicators//
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>  
-
-
-
-        <h2 style="text-align:center">What others have to say</h2>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="./image/pexels-kindel-media-8566521.jpg" alt="Jane" style="width:100%" height="150">
-                <div class="container">
-                    <h2>###</h2>
-                    <p class="title">***</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>jane@example.com</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="./image/pexels-kindel-media-8566521.jpg" alt="Mike" style="width:100%" height="150">
-                <div class="container">
-                    <h2>Mike Ross</h2>
-                    <p class="title">***</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <img src="./image/pexels-kindel-media-8566521.jpg" alt="John" style="width:100%" height="150">
-                <div class="container">
-                    <h2>John Doe</h2>
-                    <p class="title">****</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>john@example.com</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <div id="b3" class="containerTab" style="display:none;background:purple">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Box 3</h2>
+        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+            ullamcorper
+            nam. Ius error diceret deseruisse ad</p>
+    </div>
+    <div id="b4" class="containerTab" style="display:none;background:purple">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Box 4</h2>
+        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+            ullamcorper
+            nam. Ius error diceret deseruisse ad</p>
+    </div>
+    <script src="./home.js"></script>
+    <!--<div class="navbar"><a href="./workshop.html" target="_blank" rel="noopener noreferrer"
+                                        class="right">Workshop</a><a href="https://manipalroboticssg.wordpress.com/" target="_blank"
+                                            class="right">Blog</a><a href="./about.html" class="right">About</a><a href="./login.html" target="_blank"
+                                                rel="noopener noreferrer" class="left">Login</a><a href="./signup.html" target="_blank"
+                                                    rel="noopener noreferrer" class="left">Sign Up</a></div>-->
+    <!-- <marquee bgcolor=#1abc9c><b>Coming Soon ! ! !
+                                    </b></marquee> -->
+    <!-- <div class="row">
+                                        <div class="side">Calendar </div>
+                                        <div class="main">Planning Our next Move. </div>
+                                    </div> -->
+    <!-- Slideshow container <div class="slideshow-container"> //Full-width slides/quotes //
+                                        <div class="mySlides"><q>I love you the more in that I believe you had liked me for my own sake and for
+                                            nothing else</q>
+                                            <p class="author">- John Keats</p>
+                                        </div>
+                                        <div class="mySlides"><q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                                            <p class="author">- Ernest Hemingway</p>
+                                        </div>
+                                        <div class="mySlides"><q>I have not failed. I've just found 10,000 ways that won' t work.</q>
+                                            <p class="author">- Thomas A. Edison</p>
+                                        </div> // Next/prev buttons //
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;
+                                        </a><a class="next" onclick="plusSlides(1)">&#10095;
+                                        </a></div> //Dots/bullets/indicators//
+                                    <div class="dot-container"><span class="dot" onclick="currentSlide(1)"></span><span class="dot"
+                                        onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span></div>
+                                    <h2 style="text-align:center">What others have to say</h2>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="card"><img src="./image/pexels-kindel-media-8566521.jpg" alt="Jane" style="width:100%"
+                                                height="150">
+                                                <div class="container">
+                                                    <h2>###</h2>
+                                                    <p class="title">***</p>
+                                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                                    <p>jane@example.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card"><img src="./image/pexels-kindel-media-8566521.jpg" alt="Mike" style="width:100%"
+                                                height="150">
+                                                <div class="container">
+                                                    <h2>Mike Ross</h2>
+                                                    <p class="title">***</p>
+                                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                                    <p>mike@example.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card"><img src="./image/pexels-kindel-media-8566521.jpg" alt="John" style="width:100%"
+                                                height="150">
+                                                <div class="container">
+                                                    <h2>John Doe</h2>
+                                                    <p class="title">****</p>
+                                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                                    <p>john@example.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
 
 
 
 
     <div class="footer">
-        <h2>Reach Out</h2>
-        <p>If you’d like to reach out to us to join us as a member, or for collaborations, submitting any technical
-            articles, etc. you may reach out to us through any of these channels</p>
-        <a href="" target="_blank" rel="noopener noreferrer"><i class="instagram"></i> <img src="./image/instagram.png"
-                alt="Instagram" width="42" height="42"></a>&nbsp; &nbsp; &nbsp;
-        <a href="https://discord.gg/4STWgrDh7N" target="_blank" rel="noopener noreferrer"><i class="discord"></i><img
-                src="./image/discord.png" alt="Discord" width="42" height="42"></a>&nbsp; &nbsp; &nbsp;
-        <a href="" target="_blank" rel="noopener noreferrer"><i class="email"></i> <img src="./image/email.png"
-                alt="E-Mail" width="42" height="42"></a>&nbsp; &nbsp; &nbsp;
-        <a href="" target="_blank" rel="noopener noreferrer"><i class="linkedin"></i> <img src="./image/linkedin.png"
-                alt="LinkedIn" width="42" height="42"></a>&nbsp; &nbsp; &nbsp;
-        <a href="#" target="_blank" rel="noopener noreferrer"><i class="#"></i></a>
-        <br>
-        <p>PS: We are also accepting members from outside Manipal! If you’d like to be a part of our Discord server
-            check out the link above. </p>
-        <br>
-        <a href="">Back To Top</a>
-    </div>
+        <div class="footer">
+            <div class="row">
+                <div class="column">
+                    <ul>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <br>
+            <a href="#top">Back To Top</a>
 
+        </div>
 </body>
 
 </html>
