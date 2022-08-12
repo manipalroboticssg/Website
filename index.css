@@ -65,7 +65,7 @@
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: db4727;
+    background-color: #db4727;
 }
 
 .dropdown-content {
@@ -275,12 +275,11 @@
         }
         .footer.footer-bottom
         {
-            background: black;
-            color: wheat;
+            text-align: center;
+            position: fixed;
+            background-color: black;
             height: 50px;
             width: 100%;
-            text-align: center;
-            position: absolute;
             bottom: 0;
             left:0;
             padding-top: 50px;
