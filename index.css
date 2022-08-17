@@ -2,18 +2,18 @@
     padding: 5px;
     text-align: center;
     background: mintcream;
-    color: mintcream;
+    color: #f5fffa;
     font-size: 30px;
 }
 
 .header h1 {
     font-size: 30px;
-    color: rgb(73, 252, 91);
+    color: #5b9178;
 }
 
 .header p {
     font-size: 20px;
-    color: db4727;
+    color: #db4727;
     text-align: center;
     font-style: italic;
     text-decoration: underline;
@@ -235,7 +235,7 @@
             /* Remove borders */
             outline: none;
             /* Remove outline */
-            background-color: db4727;
+            background-color: #db4727;
             /* Set a background color */
             color: mintcream;
             /* Text color */
@@ -258,12 +258,12 @@
         .footer {
             background: #1f3d2f;
             color: mintcream;
-            height: 400px;
+            height: 200px;
             position: relative;
         }
 
         .footer.footer-content{
-            border: 1px #db4727;
+            border: 3px #db4727;
             height:350px;
             display: flex;
         }
@@ -273,14 +273,16 @@
             padding: 25px;
             border:1px white;
         }
-        .footer.footer-bottom
+        .footer-bottom
         {
+            font-size: small;
+            color: #f1f8ee;
             text-align: center;
             position: fixed;
             background-color: black;
-            height: 50px;
+            height: 25px;
             width: 100%;
             bottom: 0;
             left:0;
-            padding-top: 50px;
+            padding-top: 5px;
         }
