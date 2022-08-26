@@ -1,9 +1,9 @@
 .header {
-    padding: 5px;
+    padding: 1px;
     text-align: center;
     background: mintcream;
     color: #f5fffa;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .header h1 {
@@ -219,6 +219,102 @@
             opacity: 2
         }
     }
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+    
+        .row {
+            display: -ms-flexbox;
+            /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+    
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 50%;
+            /* IE 10 */
+            flex: 50%;
+            padding: 0 4px;
+        }
+    
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+    
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    
+        .btn:hover {
+            background-color: #ddd;
+        }
+    
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+                * {
+                    box-sizing: border-box
+                }
+        
+                /* Container needed to position the overlay. Adjust the width as needed */
+                .container {
+                    position: relative;
+                    width: 50%;
+                    max-width: 300px;
+                }
+        
+                /* Make the image to responsive */
+                .image {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+        
+                /* The overlay effect - lays on top of the container and over the image */
+                .overlay {
+                    position: absolute;
+                    bottom: 0;
+                    background: rgb(0, 0, 0);
+                    background: rgba(0, 0, 0, 0.5);
+                    /* Black see-through */
+                    color: #f1f1f1;
+                    width: 100%;
+                    transition: .5s ease;
+                    opacity: 0;
+                    color: white;
+                    font-size: 20px;
+                    padding: 20px;
+                    text-align: center;
+                }
+        
+                /* When you mouse over the container, fade in the overlay title */
+                .container:hover .overlay {
+                    opacity: 1;
+                }
+    
 
         #myBtn {
             display: none;
@@ -273,6 +369,7 @@
             padding: 25px;
             border:1px white;
         }
+
         .footer-bottom
         {
             font-size: small;
