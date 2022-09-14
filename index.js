@@ -1,4 +1,5 @@
 var slidePosition = 0;
+
 SlideShow();
 
 function SlideShow() {
