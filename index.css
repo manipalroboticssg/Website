@@ -140,12 +140,120 @@
     }
 }
 
+.blogs{
+    background-color: mintcream;
+}
+.blogs .link{
+    font-size: small;
+    color: black;
+}
+.column {
+    float: left;
+    width: 23%;
+    margin-bottom: 10px;
+    padding:0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: goldenrod;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.button:hover {
+    background-color:darkgoldenrod;
+}
+
+
+.events{
+    background-color: lightgray;
+}
+.columns {
+    float: left;
+        width: 45%;
+        margin-bottom: 0px;
+        padding: 0 8px;
+}
+.cards{
+    background-color: #5b9178;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.cards1 {
+    background-color: #1f3d2f;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.contain::after,
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.links1{
+    font-size: small;
+    color: black;
+}
+.buttons {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: goldenrod;
+    text-align: center;
+    cursor: pointer;
+    width: 20%;
+}
+.buttons:hover {
+    background-color: darkgoldenrod;
+}
+.contain{
+    padding: 0 16px;
+}
+
 .footer {
     background: #1f3d2f;
     color: mintcream;
     bottom: 0%;
     height: 230px;
-    position: fixed;
+    margin-top: 25px;
+    padding-top: 1px;
+    position: relative;
 }
 .footer a{
     overflow: hidden;
