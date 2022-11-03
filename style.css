@@ -1,236 +1,154 @@
-body
-{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: whitesmoke ;
-    background-image: url("./image/pexels-kindel-media-8566521.jpg");
+.content{
+    background-color: #e4fff5;
 }
-h1 {
-    color: black;
-}
-p {
-    color: black;
-    text-align: justify;
-}
+
 
 
 .header {
-        padding: 5px;
-        text-align: center;
-        background: #f6f7f7;
-        color: white;
-        font-size: 30px;
-    }
-.header h1 {
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-}
-.header p{
+
+    background: mintcream;
+
+    color: #f5fffa;
+
     font-size: 20px;
-    color: red;
-    text-align: center;
-    font-style: italic;
-    text-decoration: underline;
+
 }
-.navbar {
+
+
+
+.header p {
+
+    font-size: 15px;
+
+    background-color: black ;
+
+    color:white;
+
+    font-style: bold;
+
+   
+
+}
+
+
+
+.topnav {
+
+    background-color: white;
+
     overflow: hidden;
-    background-color: #333;
+
 }
-.navbar a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-.navbar a.right {
+
+
+
+.topnav a {
+
     float: left;
+
+    color: #f2f2f2;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
 }
-.navbar a.left{
-    float: right;
-}
-.navbar a:hover {
-    background-color: rgb(253, 252, 252);
+
+
+
+.topnav a:hover {
+
+    background-color: #ddd;
+
     color: black;
+
 }
-* {
-    box-sizing: border-box;
+
+
+
+.topnav a.split {
+
+    float: right;
+
+    background-color: white;
+
+    color: black;
+
+    text-decoration: underline;
+
 }
-.row {
+
+.content{
+    color:black;
+}
+
+.meet-team{
+    display:flex;   /* vertical column of content turns into a horizontal row */
+    flex-wrap: wrap;   /*because browser window has constraints,the long horizontal row will wrap back to a column */
+    justify-content: space-around;
+}
+
+.meet-image{
+height:200px;
+}
+
+.sm-im{
+    height:30px;
+    padding:10px;
+}
+
+.team-item{
+    padding:50px;
+}
+.position{
+    text-align:center;
+    padding:10px;
+}
+.sm{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
-.side {
-    flex: 10%;
-    background-color: #94ecebe3;
-    padding: 20px;
-}
-.main {
-    flex: 80%;
-    background-color: white;
-    padding: 20px;
-}
+
+
+/* by priyanshu footer*/
+
 .footer {
-    padding: 20px;
-    background: gainsboro;
-}
-.footer p{
-    color: black;
-    text-align: left;
-    text-decoration: none;
-}
-@media screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-}
-/* for mobile disable animation*/ 
-@media screen and (max-width: 768px) {
-    [data-aos-delay] {
-        transition-delay: 0 !important;
-    }
-}
-.slideshow-container {
+    background: #1f3d2f;
+    color: mintcream;
+    bottom: 0%;
+    height: 230px;
+    margin-top: 25px;
+    padding-top: 1px;
     position: relative;
-    background: #f1f1f1f1;
 }
-
-/* 
-.mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-}
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
+.footer a{
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-}
-.dot-container {
     text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-q {
-    font-style: italic;
-}
-.author {
-    color: cornflowerblue;
-}
-*/
-
-
-.aheader {
-    font-size: 10px;
-    background-color: white;
-    text-align: center;
-}
-.aheader h1{
-    color: rgb(4, 248, 138);
-}
-.aheader p {
-    color: rgb(239, 17, 17);
-    font-style: italic;
-}
-ody 
-{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-}
-html {
-    box-sizing: border-box;
-}
-*,*:before,*:after {
-    box-sizing: inherit;
-}
-.column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-    background-color: white;
-}
-.about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #f1f4fc;
-    color: white;
-}
-.container {
-    padding: 0 16px;
-}
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.title {
-    color: grey;
-}
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-.button:hover {
-    background-color: #555;
-}
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
 }
 
+.footer img.mid{
+    vertical-align: text-top;
+}
+
+.footer-body{
+    text-align: center;
+    font-size: 20px;
+}
+.footer-bottom{
+    text-align: center;
+}
+
+/* content done*/
+
+.feet{
+    background-color: #a1ffc0;
+}
 
 
