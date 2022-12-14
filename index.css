@@ -50,7 +50,7 @@
     margin: 0;
 }
 .Containers {
-    height: 160px;
+    height: 500px;
     display: inline-block;
 }
 .Containers img {
@@ -59,12 +59,29 @@
     object-fit: cover;
     object-fit: contain;
 }
+
+.Containers .Content {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.2);
+    /* Black background with 0.5 opacity */
+    color: black;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    padding: 20px;
+    /* Some padding */
+}
 /* forward & Back buttons */
 .Back,
 .forward {
     cursor: pointer;
     position: absolute;
-    top: 48%;
+    top: 40%;
     width: auto;
     margin-top: -23px;
     padding: 17px;
@@ -73,7 +90,7 @@
     font-size: 19px;
     transition: 0.4s ease;
     border-radius: 0 5px 5px 0;
-    user-select: none;
+    user-select: none ;
 }
 /* Place the "forward button" to the right */
 .forward {
