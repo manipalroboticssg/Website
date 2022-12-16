@@ -162,13 +162,24 @@ html{
     }
 }
 
+
+/* BLOGS SECTION */
+
 .blogs{
     background-color: mintcream;
 }
 .blogs .link{
-    font-size: small;
     color: black;
+    font-weight: 700;
+    font-size: 25px;
 }
+
+.blogs h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .column {
     float: left;
     width: 23%;
