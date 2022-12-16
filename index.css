@@ -1,3 +1,9 @@
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header {
     background: mintcream;
     color: #f5fffa;
@@ -265,12 +271,12 @@
 .footer {
     background: #1f3d2f;
     color: mintcream;
-    bottom: 0%;
-    height: 230px;
-    margin-top: 25px;
     padding-top: 1px;
-    position: relative;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
+
 .footer a{
     overflow: hidden;
     text-decoration: none;
@@ -324,12 +330,13 @@
     font-size: 20px;
     color: aqua;
 }
-.footer-body{
+.footer-middle{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 .footer-bottom{
     text-align: center;
+    font-size: 15px;
 }
 
 footer {
