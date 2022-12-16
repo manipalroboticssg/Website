@@ -174,10 +174,11 @@ html{
     font-size: 25px;
 }
 
-.blogs h2{
+.section-heading{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 500;
+    margin-left: 30px;
 }
 
 .column {
@@ -262,6 +263,13 @@ html{
     background-color: #ede6e6;
     padding: 20px;
 }
+
+.events .link{
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+}
+
 .columns {
     float: left;
         width: 45%;
