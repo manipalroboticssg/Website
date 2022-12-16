@@ -195,11 +195,18 @@ html{
     }
 }
 
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+.card{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /* Some left and right padding inside the container */
 .container {
     padding: 0 16px;
@@ -217,7 +224,7 @@ html{
     display: inline-block;
     padding: 8px;
     color: black;
-    background-color: goldenrod;
+    background-color: #fec35e;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -228,19 +235,28 @@ html{
     font-weight: bold;
 }
 .button:hover {
-    background-color:darkgoldenrod;
+    background-color:#fec35e;
 }
 
 .blog-image{
     width: 100%;
-    height: auto;
+    height: 45%;
 }
 
 .blog-title{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 25px;
+    text-align: center;
 }
+
+.blog-snippet{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* BLOG SECTION ENDS */
 
 .events{
     background-color: #ede6e6;
@@ -278,13 +294,13 @@ html{
     display: inline-block;
     padding: 8px;
     color: black;
-    background-color: goldenrod;
+    background-color: #fec35e;
     text-align: center;
     cursor: pointer;
     width: 20%;
 }
 .buttons:hover {
-    background-color: darkgoldenrod;
+    background-color: #fec35e;
 }
 .contain{
     padding: 0 16px;
