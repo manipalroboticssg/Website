@@ -259,9 +259,18 @@ html{
 
 /* BLOG SECTION ENDS */
 
+
+/* EVENTS SECTION STARTS */
+
 .events{
     background-color: #ede6e6;
     padding: 20px;
+}
+
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .events .link{
@@ -270,32 +279,37 @@ html{
     font-size: 25px;
 }
 
-.columns {
-    float: left;
-        width: 45%;
-        margin-bottom: 0px;
-        padding: 0 8px;
-}
-.cards{
-    background-color: #5b9178;
+.event-card{
+    box-sizing: border-box;
     color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+    height: 100%;
+    margin: 10px;
 }
-.cards1 {
+
+.dark-card {
     background-color: #1f3d2f;
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.contain::after,
-.rows:after {
-    content: "";
-    display: table;
-    clear: both;
+
+.light-card {
+    background-color: #5b9178;
 }
-.links1{
-    font-size: small;
-    color: black;
+
+.event-snippet{
+    padding: 0px 20px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.event-details {
+    font-size: 18px;
+}
+
+.columns {
+    height: 250px;
+}
+
 .buttons {
     border: none;
     outline: 0;
@@ -304,15 +318,11 @@ html{
     color: black;
     background-color: #fec35e;
     text-align: center;
-    cursor: pointer;
-    width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
-.buttons:hover {
-    background-color: #fec35e;
-}
-.contain{
-    padding: 0 16px;
-}
+
+/* EVENTS SECTION ENDS */
 
 .footer {
     background: #1f3d2f;
