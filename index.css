@@ -166,7 +166,7 @@ html{
 /* BLOGS SECTION */
 
 .blogs{
-    background-color: mintcream;
+    background-color: #f5f5f5;
 }
 .blogs .link{
     color: black;
@@ -231,9 +231,20 @@ html{
     background-color:darkgoldenrod;
 }
 
+.blog-image{
+    width: 100%;
+    height: auto;
+}
+
+.blog-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
 
 .events{
-    background-color: lightgray;
+    background-color: #ede6e6;
+    padding: 20px;
 }
 .columns {
     float: left;
@@ -283,7 +294,6 @@ html{
     background: #1f3d2f;
     color: mintcream;
     padding-top: 1px;
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
 }
