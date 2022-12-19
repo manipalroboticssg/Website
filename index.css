@@ -297,7 +297,7 @@ html{
 .footer {
     background: #1f3d2f;
     color: mintcream;
-    padding-top: 1px;
+    padding: 1px 24px 16px 24px;
     display: flex;
     flex-direction: column;
 }
