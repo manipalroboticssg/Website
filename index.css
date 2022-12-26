@@ -133,7 +133,10 @@ html{
 .row{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    max-width: 1500px;
+    min-width: 1400px;
+    overflow-x: scroll;
 }
 
 .card{
@@ -245,18 +248,21 @@ html{
 
 .buttons {
     border: none;
-    outline: 0;
     display: inline-block;
+    padding: 8px;
     color: black;
     background-color: #fec35e;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    cursor: pointer;
+    width: 25%;
 }
 
 .register-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
     display: inline-block;
-    padding: 8px;
 }
 
 /* EVENTS SECTION ENDS */
