@@ -136,7 +136,6 @@ html{
     justify-content: flex-start;
     max-width: 1500px;
     min-width: 1400px;
-    overflow-x: scroll;
 }
 
 .card{
