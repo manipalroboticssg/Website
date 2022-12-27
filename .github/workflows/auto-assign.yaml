@@ -1,2 +1,16 @@
 name: Auto Assign Issues/PRs
-uses: wow-actions/auto-assign@v2.1.0
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+jobs:
+  auto-assigner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto assign issues/PRs
+        uses: wow-actions/auto-assign@v2.1.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          reviewers: CH13F-1419
+          assignees: CH13F-1419
