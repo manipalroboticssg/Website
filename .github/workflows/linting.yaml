@@ -1,0 +1,20 @@
+name: Auto Linter
+on:
+  push:
+    branches: "*"
+jobs:
+  auto-linter:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository to perform linting
+      - name: Checkout Codebase
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      # Run linter on files
+      - name: GitHub Super Linter
+        uses: github/super-linter@v4.9.7
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: false
+
